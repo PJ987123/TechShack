@@ -5,3 +5,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.info-header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #1E1F29;
+  height: 3em;
+  align-items: center;
+}
+
+ul.top-header-left, ul.top-header-right{margin: 0;}
+
+i {color: #fff;}
+
+ul li {
+  list-style-type: none;
+  display:inline;
+  padding-left: 1.5em;
+}
+
+.fas{
+  color: green;
+
+}
+
+/* unvisited link */
+a:link {color: #fff;}
+
+/* visited link */
+a:visited {color: #fff;}
+
+/* mouse over link */
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {color: #fff;}
