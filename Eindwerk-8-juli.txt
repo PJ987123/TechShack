@@ -1,0 +1,16 @@
+08/07/2020
+
+Opstrart wp_techshack
+Wordpress installeren
+Thema installeren
+Enqueueing CSS
+Enqueueing JS
+Inhoud editeerbaar zetten
+
+Nieuwe folder aanmaken
+HTML, CSS, JS, IMG bestanden/folders aanmaken
+Opstart HTML en CSS
+Top-header aanmaken
+Top-header stylen
+Header aanmaken
+
