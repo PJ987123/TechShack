@@ -1,0 +1,13 @@
+Kleine aanpassingen aan eindwerk
+
+Leren overnavbar-submenu's:
+http://bootstrapessentials.com/fulldocs/components/navbar/navbar-submenu/
+https://www.youtube.com/watch?v=mPLIIUcjpCA
+
+leren over pseudo elementen:
+https://www.youtube.com/watch?v=zGiirUiWslI
+https://www.youtube.com/watch?v=xoRbkm8XgfQ
+https://www.youtube.com/watch?v=djbtPnNmc0I
+
+leren over animatie's:
+https://greensock.com/gsap/
