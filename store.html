@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/shop.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.css" />
+  <title>Shop</title>
+</head>
+<body>
+    <!-------------------------------------------------- TOP HEADER -------------------------------------------------->
+    <div class="info-header">
+      <ul class="top-header-left">
+        <li><i class="fas fa-phone"></i><a href="#">&nbsp; +123-45-67-89</a></li>
+        <li><i class="fas fa-envelope"></i><a href="#">&nbsp; email@outlook.com</a></li>
+        <li><i class="fas fa-map-marker-alt"></i><a href="#">&nbsp; 9100 Sint-Niklaas</a></li>
+      </ul>
+  
+      <ul class="top-header-right">
+        <li><i class="fas fa-user"></i><a href="#">&nbsp; My account</a></li>
+      </ul>
+    </div>
+  
+  
+    <!-------------------------------------------------- HEADER -------------------------------------------------->
+    <header>
+      <a class="logo" href="index.html"><img src="img/TechShack.png&text=TechShack.jpg&text=TechShack" alt="logo"></a>
+      <nav class="left">
+        <ul class="nav__links">
+          <li><a href="#">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Categories ▾</button>
+            <div class="dropdown-content">
+              <a href="#">Aircoolers</a>
+              <a href="#">Cables</a>
+              <a href="#">Case's</a>
+              <a href="#">CPU's</a>
+              <a href="#">Fans</a>
+              <a href="#">Liquidcoolers</a>
+              <a href="#">Motherboards</a>
+              <a href="#">NVME m.2 SSD's</a>
+              <a href="#">PSU's</a>
+              <a href="#">RAM</a>
+              <a href="#">SSD's</a>
+            </div>
+          </div>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </nav>
+  
+  
+      <!-------------------------------------------------- NAV -------------------------------------------------->
+      <nav class="right">
+        <a class="cta" href="#">Contact</a>
+        <a class="nav__rechts" href="#"><i class="fas fa-heart"></i>&nbsp; Wishlist</a>
+        <a class="nav__rechts" href="#"><i class="fas fa-shopping-cart"></i>&nbsp; Shopping cart</a>
+      </nav>
+  
+      <p class="menu cta">Home</p>
+    </header>
+    <div class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="#">Shopping cart</a></li>
+      </div>
+    </div>
+
+<section class="container content-section">
+    <h2 class="section-header">MUSIC</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Album 1</span>
+            <img class="shop-item-image" src="img/rog strix.jpeg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$12.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Album 2</span>
+            <img class="shop-item-image" src="img/rog strix.jpeg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$14.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Album 3</span>
+            <img class="shop-item-image" src="img/rog strix.jpeg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$9.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Album 4</span>
+            <img class="shop-item-image" src="img/rog strix.jpeg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$19.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">MERCH</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">T-Shirt</span>
+            <img class="shop-item-image" src="img/rog strix.jpeg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$19.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Coffee Cup</span>
+            <img class="shop-item-image" src="img/rog strix.jpeg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$6.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+</section>
+
+
+<footer>
+  <div class="payment">
+    <i class="fab fa-cc-visa fa-3x"></i>
+    <i class="fas fa-credit-card fa-3x"></i>
+    <i class="fab fa-cc-paypal fa-3x"></i>
+    <i class="fab fa-cc-mastercard fa-3x"></i>
+    <i class="fab fa-cc-discover fa-3x"></i>
+
+
+  </div>
+
+  <div class="copyright">
+    <p>Copyright &copy;2020 All rights reserved | Made by Pee-Jay Smits </p>
+  </div>
+</footer>
+<!-- <footer class="main-footer">
+    <div class="container main-footer-container">
+        <h3 class="band-name">The Generics</h3>
+        <ul class="nav footer-nav">
+            <li>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="Images/YouTube Logo.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.spotify.com" target="_blank">
+                    <img src="Images/Spotify Logo.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="Images/Facebook Logo.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer> -->
+</body>
+</html>
