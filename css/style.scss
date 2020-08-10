@@ -8,7 +8,22 @@
 
 body {background: gray;}
 
-
+//////////////////////////////////////// SCROLLBAR ////////////////////////////////////////
+::-webkit-scrollbar{
+  width: 25px;
+}
+::-webkit-scrollbar-track{
+  border: 7px solid gray;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(
+    45deg,
+    #06dee1,
+    #79ff6c
+  );
+  border-radius: 3px;
+}
 
 //////////////////////////////////////// TOP-HEADER ////////////////////////////////////////
 .info-header {
@@ -203,68 +218,86 @@ button.dropbtn {
 .dropdown:hover .dropbtn {color: #24252a;}
 
 
-//////////////////////////////////////// MAIN ////////////////////////////////////////
-.board h2 {
+
+//////////////////////////////////////// BANNER ////////////////////////////////////////
+.banner{
+  background-color: #66B933;
+  padding: 10px;
+  background-image: repeating-linear-gradient(
+    135deg,
+    #24252a 0,
+    #fff 20px,
+    transparent 20px,
+    transparent 40px
+  );
   text-align: center;
-  padding: 1em;
-  margin: 0;
   font-size: 40px;
-  text-decoration: underline;
-  font-style: italic;
+  font-weight: bold;
+  p span{
+    padding: 0px 3px 3px 3px;
+    background: rgba(255, 255, 255, 0.6)
+  }
+  p{margin: 0;}
 }
 
-figure.card {
-  min-height: 600px;
-}
-
-.row {
-  padding: 3em;
-  padding-top: 0;
-  margin: 0;
-}
-.card-product .img-wrap {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-  position: relative;
-  height: 220px;
+//////////////////////////////////////// MAIN ////////////////////////////////////////
+main, .products {
+  display: flex;
+  margin: 2em 0em;
   text-align: center;
-  padding: 1em;
+  justify-content: center;
+  // justify-content: space-evenly;
 }
-.card-product .img-wrap img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: cover;
-}
-.card-product .info-wrap {
-  overflow: hidden;
-  padding: 15px;
-  border-top: 1px solid #eee;
-}
-.card-product .bottom-wrap {
-  padding: 15px;
-  border-top: 1px solid #eee;
-}
-
-.label-rating { 
-  margin-right:10px;
-  color: #333;
+.container-main {
   display: inline-block;
-  vertical-align: middle;
+  margin: 2em;
+}
+.card {
+  height: 100%;
 }
 
-.card-product .price-old {color: #999;}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  object-fit: scale-down;
+  padding: 1em;
+  margin: auto;
+}
+
+.card-text{
+  display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
 
 .btn-primary {
-  background-color: #66B933;
-  color: #24252a;
-  border-color: #66B933;
+  background: #66B933;
+  border: 0;
 }
 
-.btn-primary:hover {background-color: #66B933;}
+button .fas {
+  color: rgb(255, 55, 55);
+}
 
-.btn-primary:visited {background-color: #66B933;}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  background-color: #66B933 !important;
+  transform: scale(1.2) perspective(1px)
+}
+.shopping {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 //////////////////////////////////////// NEW PRODUCTS ////////////////////////////////////////
+.carousel-inner{
+  text-align: center;
+}
 
 
 
@@ -313,6 +346,7 @@ footer {
     display: block;
     padding: 1rem;
   }
+  .right{display: flex;}
 
   a.nav__rechts {
     font-size: 15px;
@@ -320,5 +354,11 @@ footer {
 
   .menu {
     display: initial;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  main {
+    display: inline-block;
   }
 }
