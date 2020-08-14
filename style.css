@@ -327,6 +327,11 @@ main, .products {
   text-overflow: ellipsis;
 }
 
+.shop-item-price {
+  padding-top: 6px;
+  color: #ad0109;
+}
+
 .btn-primary {
   background: linear-gradient(45deg, #06dee1, #79ff6c);
   border: 0;
